@@ -62,6 +62,7 @@ a {
     
 }
 .welcome-section > p {
+    display: contents;
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
