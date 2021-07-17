@@ -1,117 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ismail Teke</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">       
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-      </head>
-</html>
-<body>
-    <nav id="navbar" class="nav">        
-        <ul class="nav-list">
-          <li>
-            <a href="#welcome-section">About</a>
-          </li>
-          <li>
-            <a href="#projects">Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+<html>
+<title>Ismail Teke</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <section id="welcome-section" class="welcome-section">        
-        <h1>Hi,<br> I'm Ismail</h1>        
-        <p>Creative web developer dedicated to developing and optimizing interactive,user-friendly,<br> and feature-rich websites.</p><br>
-        <p> Analytical skills and strong attention to detail in order to deliver original and efficient<br> web solutions. </p>
-      </section>
 
-      <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">These are some of my projects</h2>
+
+<body >
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="bar-item button hide-small right hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="bar-item button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 display-container opacity-min" id="home">  
+  <canvas id="myCanvas" class="stretch">Your browser does not support the canvas element.</canvas>
+<div id="crawl-container" class="stretch">
+  <div id="crawl">
+    <div id="crawl-content">
+      <h1>
+        ISMAIL TEKE
+      </h1>
+      <h2>
+        Web Developer<br>
+        Software Engineer
+      </h2>
+      <p>
+        I’ve always sought out opportunities and challenges that are meaningful to me.<br>
+         Although my professional path has taken many twists and turns,<br>
+         from travelling the world to working in various industries.
+      </p>
+      <p>
+        As a Software Engineer,<br>
+        I've never stopped engaging my passion of learning and solving problems.        
+      </p>
+      <p>
+        As a web developer,<br>
+         I enjoy using my obsessive attention to detail,<br>
+         my unequivocal love for making things, and my mission-driven work ethic.<br>
+         <strong>Never Give Up!!!</strong>          
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="display-middle" style="white-space:nowrap;">
+    
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT ME</h3>
+  <p class="center"><em>I am Ismail Teke</em></p>
+  <p>I was born in Turkey and grew up In the Netherlands. I have travelled most parts of the world and there is still I would love to see.
+    I always wanted to be a computer programmer my real passion is to create which could be, create a new software, a new game or even a new app.
+    I started programming just about six years ago. First, I was doing some online tutorials but then I realised I needed real foundation, so I started the course for Certificate IV in Programming.
+    I finished my course in 2019 and I kept on learning. Since then, I have added few more skills.
+    My strongest perk is my persistence, I always find a solution for any project I am given.<br>
+    <strong>My motto is never give up on your dreams</strong>
+    </p>
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <p><b><i class="fa fa-user margin-right"></i>Ismail Teke</b></p><br>
+      <img src="images/profile_reverse.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="col m6 hide-small padding-large">
+      <p>Welcome to my website. I am Ismail Teke consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <p class="large center padding-16">Im really good at:</p>
+  <p class="wide"><i class="fa fa-camera"></i>Software Development</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:90%">90%</div>
+  </div>
+  <p class="wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:85%">85%</div>
+  </div>
+  <p class="wide"><i class="fa fa-photo"></i>Database Developing</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="row center dark-grey padding-16">
+  
+  <div class="quarter section">
+    <span class="xlarge">22+</span><br>
+    Projects Done
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">10+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="content container padding-64" id="portfolio">
+  <h3 class="center">MY WORK</h3>
+  <p class="center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/android.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Android">
+    </div>
+
+    <div class="col m3">
+      <img src="images/Csharp.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="col m3">
+      <img src="images/Eleda_Alter.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="col m3">
+      <img src="images/express.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/html-css.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+    </div>
+
+    <div class="col m3">
+      <img src="images/java.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="col m3">
+      <img src="images/mongo.jfif" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="col m3">
+      <img src="images/python.jfif" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+    </div>
+    <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="content container padding-64" id="contact">
+  <h3 class="center">WHERE I WORK</h3>
+  <p class="center"><em>I'd love your feedback!</em></p>
+
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      <img src="images/nodejs.png" class="image round" style="width:100%">
+    </div>
+    <div class="col m8 panel">
+      <div class="large margin-bottom">
+        <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Sydney, AUS<br>
+        <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: ismailteke887@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="row-padding" style="margin:0 -16px 8px -16px">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="half">
+            <input class="input border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="input border" type="text" placeholder="Message" required name="Message">
+        <button class="button black right section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </div>  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+
+const canvas = document.getElementById("myCanvas");
+    const c = canvas.getContext("2d");
+
+    let w;
+    let h;
+
+    const setCanvasExtents = () => {
+      w = document.body.clientWidth;
+      h = document.body.clientHeight;
+      canvas.width = Math.min(1600, w);
+      canvas.height = Math.min(900, h);
+    };
+
+    setCanvasExtents();
+
+    const crawl = document.getElementById("crawl");
+    const crawlContent = document.getElementById("crawl-content");
+    const crawlContentStyle = crawlContent.style;
+
+    // start crawl at bottom of 3d plane
+    let crawlPos = crawl.clientHeight;
+
+    const makeStars = count => {
+      const out = [];
+      for (let i = 0; i < count; i++) {
+        const s = {
+          x: Math.random() * 1600 - 800,
+          y: Math.random() * 900 - 450,
+          z: Math.random() * 1000
+        };
+        out.push(s);
+      }
+      return out;
+    };
+
+    let stars = makeStars(5000);
+
+    window.onresize = () => {
+      setCanvasExtents();
+    };
+
+    const clear = () => {
+      c.fillStyle = "black";
+      c.fillRect(0, 0, canvas.width, canvas.height);
+    };
+
+    const putPixel = (x, y, brightness) => {
+      const intensity = brightness * 800;
+      const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+      c.fillStyle = rgb;
+      c.fillRect(x, y, 1, 1);
+    };
+
+    const moveStars = distance => {
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const s = stars[i];
+        s.z -= distance;
+        if (s.z <= 1) {
+          s.z += 999;
+        }
+      }
+    };
+
+    const moveCrawl = distance => {
+      crawlPos -= distance;
+      crawlContentStyle.top = crawlPos + "px";
       
-        <div class="projects-grid">
-          <a href="https://www.eledaalter.com.au/" target="_blank" class="project project-tile">
-            <img class="project-image" src="images/Eleda_Alter.png" alt="project">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Eleda Alter
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-          <a href="https://github.com/smileyteke/side-scrolling-game" target="_blank" class="project project-tile">
-            <img class="project-image" src="images/side-scrolling game.png" alt="project">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-             C# game project
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-          <a href="https://github.com/smileyteke/JanesDataAware" target="_blank" class="project project-tile">
-            <img class="project-image" src="images/mysql.png" alt="project">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Janes Data Aware project
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=au.com.eledaalter" target="_blank" class="project project-tile">
-            <img class="project-image" src="images/logo.jpg" alt="project">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Eleda Design
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-          <a href="projects/pong.html" target="_blank" class="project project-tile">
-            <img class="project-image" src="images/pong.png" alt="project">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-            Pong Game
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-          <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Tic Tac Toe Game
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-        </div>
+      if (crawlPos < -crawlContent.clientHeight) {
+        crawlPos = crawl.clientHeight;
+      }
+    };
+
+    const paintStars = () => {
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const star = stars[i];
+
+        const x = cx + star.x / (star.z * 0.001);
+        const y = cy + star.y / (star.z * 0.001);
+
+        if (x < 0 || x >= w || y < 0 || y >= h) {
+          continue;
+        }
+
+        const d = star.z / 1000.0;
+        const b = 1 - d * d;
+
+        putPixel(x, y, b);
+      }
+    };
+
+    let prevTime;
+    const init = time => {
+      prevTime = time;
+      requestAnimationFrame(tick);
+    };
+
+    const tick = time => {
+      let elapsed = time - prevTime;
+      prevTime = time;
+
+      moveStars(elapsed * 0.10);
       
-        <a href="#" class="btn btn-show-all" target="_blank">Show all<i class="fa fa-chevron-right"></i></a>
-      </section>
+      moveCrawl(elapsed * 0.06);
 
-      <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-          <h2>Let's work together...</h2>
-          <p>How do you take your coffee?</p>
-        </div>
-        <div class="contact-links">
-          <a href="https://www.facebook.com/Izzy-Teke-108881178109347" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
-          <a id="profile-link" href="https://github.com/smileyteke" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/ismail-teke-47b4a81b3/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="mailto:ismailteke887@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-          <a href="tel:0410 477 024" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-        </div>
-      </section>
+      clear();
+      paintStars();
 
-      <footer>
-        <p>
-          **This is just a fake portfolio. All the projects and contact details given
-          are not real.
-        </p>
-        <p>
-          © Created for
-          <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
-        </p>
-      </footer>
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(init);
+</script>
+
 </body>
+</html>
