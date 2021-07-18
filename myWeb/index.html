@@ -66,18 +66,15 @@
       </p>
     </div>
   </div>
-</div>
-  <div class="display-middle" style="white-space:nowrap;">
-    
-  </div>
+</div>  
 </div>
 
 <!-- Container (About Section) -->
 <div class="content container padding-64" id="about">
   <h3 class="center">ABOUT ME</h3>
   <p class="center"><em>I am Ismail Teke</em></p>
-  <p>I was born in Turkey and grew up In the Netherlands. I have travelled most parts of the world and there is still I would love to see.
-    I always wanted to be a computer programmer my real passion is to create which could be, create a new software, a new game or even a new app.
+  <p>I was born in Turkey and grew up In the Netherlands. I have travelled most parts of the world and there is still much more I would love to see.
+    
     I started programming just about six years ago. First, I was doing some online tutorials but then I realised I needed real foundation, so I started the course for Certificate IV in Programming.
     I finished my course in 2019 and I kept on learning. Since then, I have added few more skills.
     My strongest perk is my persistence, I always find a solution for any project I am given.<br>
@@ -142,37 +139,37 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="row-padding center">
     <div class="col m3">
-      <img src="images/android.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Android">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Android">
     </div>
 
     <div class="col m3">
-      <img src="images/Csharp.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
     </div>
 
     <div class="col m3">
-      <img src="images/Eleda_Alter.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
     </div>
 
     <div class="col m3">
-      <img src="images/express.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
     </div>
   </div>
 
   <div class="row-padding center section">
     <div class="col m3">
-      <img src="images/html-css.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
     </div>
 
     <div class="col m3">
-      <img src="images/java.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
     </div>
 
     <div class="col m3">
-      <img src="images/mongo.jfif" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
     </div>
 
     <div class="col m3">
-      <img src="images/python.jfif" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+      <img src="images/logo.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
     <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
@@ -321,7 +318,7 @@ const canvas = document.getElementById("myCanvas");
       const intensity = brightness * 800;
       const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
       c.fillStyle = rgb;
-      c.fillRect(x, y, 1, 1);
+      c.fillRect(x, y, 2, 2);
     };
 
     const moveStars = distance => {
@@ -330,7 +327,7 @@ const canvas = document.getElementById("myCanvas");
         const s = stars[i];
         s.z -= distance;
         if (s.z <= 1) {
-          s.z += 999;
+          s.z += 1000;
         }
       }
     };
