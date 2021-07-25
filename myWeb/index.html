@@ -6,18 +6,15 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
 <body >
-
 <!-- Navbar (sit on top) -->
 <div class="top">
   <div class="bar" id="myNavbar">
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#home" class="bar-item button">    
+      HOME</a>
     <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -25,7 +22,6 @@
       <i class="fa fa-search"></i>
     </a>
   </div>
-
   <!-- Navbar on small screens -->
   <div id="navDemo" class="bar-block white hide hide-large hide-medium">
     <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
@@ -34,12 +30,12 @@
     <a href="#" class="bar-item button">SEARCH</a>
   </div>
 </div>
+<!-- container with canvas-->
 
-<!-- First Parallax Image with Logo Text -->
-
-<div class="bgimg-1 display-container opacity-min" id="home">  
-  <canvas id="myCanvas" class="stretch">Your browser does not support the canvas element.</canvas>
+<div class="bgimg-1 display-container opacity-min" id="home">    
+  <canvas id="myCanvas" class="stretch">Your browser does not support the canvas element.</canvas>    
 <div id="crawl-container" class="stretch">
+  
   <div id="crawl">
     <div id="crawl-content">
       <h1>
@@ -83,51 +79,202 @@
   <div class="row">
     <div class="col m6 center padding-large">
       <p><b><i class="fa fa-user margin-right"></i>Ismail Teke</b></p><br>
-      <img src="images/profile_reverse.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="col m6 hide-small padding-large">
-      <p>Welcome to my website. I am Ismail Teke consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="large center padding-16">Im really good at:</p>
-  <p class="wide"><i class="fa fa-camera"></i>Software Development</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center" style="width:90%">90%</div>
-  </div>
-  <p class="wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center" style="width:85%">85%</div>
-  </div>
-  <p class="wide"><i class="fa fa-photo"></i>Database Developing</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center" style="width:75%">75%</div>
+      <img src="images/profile_reverse.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me">
+    </div>   
+  </div>  
   </div>
 </div>
+<!-- Projects section -->
+<section id="projects" class="section scrollspy">
+  <h3 class="page-title white-text teal">Projects</h3>
+  <div class="contain">
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Screenshot of Interpol8r web app" src="images/Eleda_Alter.png" class="activator">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Eleda Alter<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Website for Eleda Alter alterations.
+            </p>
+          </div>
+        </div>
 
-<div class="row center dark-grey padding-16">
-  
-  <div class="quarter section">
-    <span class="xlarge">22+</span><br>
-    Projects Done
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Screenshot of Interpol8r web app" src="images/Eleda Design Template.png" class="activator">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Eleda Design<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Web template for Eleda Design
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Screenshot of Interpol8r web app" src="images/side-scrolling game.png" class="activator">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Side scrolling game<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Experimental side scrolling game design in visual studio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Screenshot of Interpol8r web app" src="images/SQl Server.jfif" class="activator">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Data aware project<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Data aware project C# and Sql server
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Screenshot of Interpol8r web app" src="images/pong.png" class="activator">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Pong game<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Experimental Pong game with javascript.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Screenshot of Interpol8r web app" src="images/Eleda_Alter.png" class="activator">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Eleda Alter<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Eleda Alter mobile app
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+</section>
+<!-- Section for my Skills -->
+
+<section id="skills" class="section scrollspy">
+  <h3 class="page-title white-text teal">Skills</h3>
+  <div class="contain">
+    <div class="cards">
+      <div class="card-content">
+        <h4 class="brown-text light">Language</h4>
+        <div class="row text-center">
+          <div class="col s4 m2">
+            <img alt="" src="images/html-css.png" class="responsive-img">HTML5
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/javascript.png" class="responsive-img">JSX
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/mongo.jfif" class="responsive-img">Haml
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/nodejs.png" class="responsive-img">Jade
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/express.png" class="responsive-img">Jekyll
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="cards">
+      <div class="card-content">
+        <h4 class="brown-text light">CSS</h4>
+        <div class="row text-center">
+          <div class="col s4 m2">
+            <img alt="" src="images/html-css.png" class="responsive-img">HTML5
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/javascript.png" class="responsive-img">JSX
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/mongo.jfif" class="responsive-img">Haml
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/nodejs.png" class="responsive-img">Jade
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/express.png" class="responsive-img">Jekyll
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="cards">
+      <div class="card-content">
+        <h4 class="brown-text light">JavaScript</h4>
+        <div class="row text-center">
+          <div class="col s4 m2">
+            <img alt="" src="images/react.png" class="responsive-img">HTML5
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/javascript.png" class="responsive-img">JSX
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/mongo.jfif" class="responsive-img">Haml
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/nodejs.png" class="responsive-img">Jade
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/express.png" class="responsive-img">Jekyll
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="cards">
+      <div class="card-content">
+        <h4 class="brown-text light">Backend</h4>
+        <div class="row text-center">
+          <div class="col s4 m2">
+            <img alt="" src="images/mongo.jfif" class="responsive-img">MongoDB
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/mysql.png" class="responsive-img">SQL
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/mongo.jfif" class="responsive-img">Haml
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/nodejs.png" class="responsive-img">Jade
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="images/express.png" class="responsive-img">Jekyll
+          </div>
+        </div>
+      </div>      
+    </div>
   </div>
-  <div class="quarter section">
-    <span class="xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="quarter section">
-    <span class="xlarge">10+</span><br>
-    Meetings
-  </div>
-</div>
+</section>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 display-container opacity-min">
   <div class="display-middle">
-    <span class="xxlarge text-white wide">PORTFOLIO</span>
+    <span class="xxlarge text-white wide"></span>
   </div>
 </div>
 
