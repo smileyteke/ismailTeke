@@ -622,6 +622,11 @@ img.responsive-img, video.responsive-video {
 .contain{
   width: 85%;
 }
+
+.row .col.m6 {
+  width: 50%;
+  margin-left: 0;
+}
 }
 
 
